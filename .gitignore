@@ -2,13 +2,18 @@ node_modules
 dist
 build
 coverage
+
 .env
 .env.*
 !.env.example
+
 .DS_Store
 npm-debug.log*
 *.log
+
 .vscode
 .idea
-*.secret.yaml
-*.secret.yml
+
+# ✅ Ignore Kubernetes secrets
+*-secret.yaml
+*-secret.yml
